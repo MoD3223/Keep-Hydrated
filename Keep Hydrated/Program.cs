@@ -24,9 +24,9 @@ namespace Keep_Hydrated
             stringTimeInHours = Console.ReadLine();
 
 
-            if (stringTimeInHours.Contains("."))
+            if (stringTimeInHours.Contains('.'))
             {
-                stringTimeInHours.Replace(".",",");
+                stringTimeInHours = stringTimeInHours.Replace('.',',');
             }
             if (Double.TryParse(stringTimeInHours, out timeInHours))
             {
@@ -41,8 +41,5 @@ namespace Keep_Hydrated
                 Console.WriteLine("Try Again!");
             }
         }
-
-
-
     }
 }
